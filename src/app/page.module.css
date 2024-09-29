@@ -1,0 +1,88 @@
+.page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.page h1 {
+  text-align: center;
+}
+
+.addTodo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.addTodo input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #28008f;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.addTodo button {
+  padding: 10px;
+  background-color: #dbc8ff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addTodo button:hover {
+  background-color: #008b6f;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+  margin: 10px;
+}
+
+.todoItem.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.statusButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.statusButton.done {
+  background-color: #9cf2fe;
+  color: white;
+}
+
+.statusButton:hover {
+  opacity: 0.8;
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.deleteButton:hover {
+  opacity: 0.7;
+}
